@@ -582,7 +582,7 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
   background-image: linear-gradient(to right, #6e64fa, #6e64fa9e),
-    url("../assets/images/hero.jpg");
+    url("../assets/images/cta-image.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

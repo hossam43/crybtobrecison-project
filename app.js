@@ -1,3 +1,5 @@
+import { ob } from "./intersectionObserver.js";
+
 ///////////////////////////////////////////////////////////
 // // Set current year
 // const yearEl = document.querySelector(".year");
@@ -44,3 +46,25 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHeroEl);
 /////////////////////////////////////////
+const allSection = document.querySelectorAll(".section-reveal");
+const optionList = {
+  root: null,
+  threshold: 0.1,
+};
+
+ob(allSection, "element--hidden", optionList);
+
+// The Event Delegation
+// Before you applay the a href must be the same as the section id
+const smoothScrollNav = (parentClass, childrenClass) => {
+  document.querySelector(`.${parentClass}`).addEventListener("click", (e) => {
+    e.preventDefault();
+    const id = e.target.getAttribute("href");
+    // Matching
+    if (e.target.classList.contains(childrenClass)) {
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    }
+  });
+};
+
+smoothScrollNav("main-nav-list", "main-nav-link");

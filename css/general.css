@@ -23,7 +23,7 @@ Paragraph default: 1.6
 
 --- 02 COLORS
 
-- Primary: #af32ff
+- Primary: #9e2de6
 - Tints:
 #fdf2e9
 #fae5d3
@@ -69,7 +69,6 @@ body {
   font-family: Arial, sans-serif;
   /* background-color: #f0f0f0; */
   background-color: #11101d;
-  color: yellow;
   position: relative;
   overflow-x: hidden;
 }
@@ -87,9 +86,6 @@ body {
   margin: 0 auto;
 }
 
-.grid:not(:last-child) {
-  /* margin-bottom: 3.2rem; */
-}
 .grid {
   display: grid;
   gap: 9.6rem;
@@ -169,6 +165,17 @@ body {
   background-color: #fff;
   color: #52b1ff;
   box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Add the reveling section */
+
+.section-reveal {
+  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+}
+
+.element--hidden {
+  opacity: 0;
+  transform: translateX(-8rem);
 }
 
 /* HELPER/SETTINGS CLASSES */

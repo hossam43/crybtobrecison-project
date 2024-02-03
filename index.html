@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/queries.css" />
+    <script defer type="module" src="./app.js"></script>
   </head>
   <body>
     <header class="header">
@@ -18,11 +19,13 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#services" class="main-nav-link">Services</a></li>
-          <li><a href="#about" class="main-nav-link">About us</a></li>
-          <li><a href="#partners" class="main-nav-link">Our Partners</a></li>
-          <li><a href="#company" class="main-nav-link">Company</a></li>
-          <li><a href="#cta" class="main-nav-link nav-cta">Join now</a></li>
+          <li><a href="#section--1" class="main-nav-link">Services</a></li>
+          <li><a href="#section--2" class="main-nav-link">About us</a></li>
+          <li><a href="#section--3" class="main-nav-link">Our Partners</a></li>
+          <li><a href="#section--4" class="main-nav-link">Company</a></li>
+          <li>
+            <a href="#section--5" class="main-nav-link nav-cta">Join now</a>
+          </li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -58,7 +61,7 @@
         <div class="grid-item hero-img-box">
           <img
             class="hero-img"
-            src="./assets/images/hero-img-resized.jpg"
+            src="./assets/images/hero-image.jpg"
             alt="futuristic hi-tech neon background generative ai"
           />
           <div class="get-started-shape">
@@ -248,30 +251,26 @@
         <!-- SOCIAL PROVE -->
         <div class="grid-item scoial-prove-box">
           <div class="social-prove">
-            <p class="social-prove-title">$985,770</p>
+            <p class="social-prove-title" id="btcPrice">$<span>9000</span></p>
             <p class="social-prove-dec">Lorem, ipsum dolor.</p>
           </div>
           <div class="social-prove">
-            <p class="social-prove-title">$985,770</p>
+            <p class="social-prove-title" id="ethPrice">$<span>9000</span></p>
             <p class="social-prove-dec">Lorem, ipsum dolor.</p>
           </div>
           <div class="social-prove">
-            <p class="social-prove-title">$985,770</p>
+            <p class="social-prove-title" id="ltcPrice">$<span>9000</span></p>
             <p class="social-prove-dec">Lorem, ipsum dolor.</p>
           </div>
           <div class="social-prove">
-            <p class="social-prove-title">$985,770</p>
-            <p class="social-prove-dec">Lorem, ipsum dolor.</p>
-          </div>
-          <div class="social-prove">
-            <p class="social-prove-title">$985,770</p>
+            <p class="social-prove-title" id="bchPrice">$<span>9000</span></p>
             <p class="social-prove-dec">Lorem, ipsum dolor.</p>
           </div>
         </div>
       </div>
     </section>
     <main>
-      <section id="services" class="permission-section">
+      <section id="section--1" class="permission-section">
         <div class="container center-text container--box">
           <h2 class="heading-secondary">
             We Help Build on your <br />
@@ -284,7 +283,7 @@
             deserunt. Molestiae, quibusdam! Laborum.
           </p>
         </div>
-        <div class="container permission-grid">
+        <div class="container permission-grid section-reveal">
           <div class="permission-box first glass">
             <div class="glass-glow-3"></div>
             <div class="icon-box">
@@ -360,7 +359,7 @@
         </div>
       </section>
 
-      <section id="about" class="about-section">
+      <section id="section--2" class="about-section">
         <div class="container container--box">
           <div class="testimonials-tilte-box">
             <h2 class="heading-secondary margin-bottom-zero about-heading">
@@ -378,7 +377,7 @@
         </div>
 
         <div
-          class="container grid grid--10-10-5--cols grid-center-v grid-center-h"
+          class="container grid grid--10-10-5--cols grid-center-v grid-center-h section-reveal"
         >
           <div class="about-img-box">
             <img src="./assets/images/crypto.png" alt="" class="about-img" />
@@ -426,11 +425,11 @@
           </div>
         </div>
       </section>
-      <section id="partners" class="partners-section">
+      <section id="section--3" class="partners-section">
         <div class="container center-text container--box">
           <h2 class="heading-secondary">Investors and Partners</h2>
         </div>
-        <div class="container">
+        <div class="container section-reveal">
           <div class="partners-box grid grid--3--cols grid-gap-0">
             <div class="partners-img-box">
               <div class="partners-img-box-glow-3"></div>
@@ -544,7 +543,7 @@
         </div>
       </section>
 
-      <section id="company" class="companies-section">
+      <section id="section--4" class="companies-section">
         <div class="container container--box center-text">
           <h2 class="heading-secondary">As Featured in Majord Publication</h2>
           <p class="section-description">
@@ -553,7 +552,7 @@
           </p>
         </div>
 
-        <div class="container grid grid--3--cols grid-gap-sm">
+        <div class="container grid grid--3--cols grid-gap-sm section-reveal">
           <div class="company-content-box center-text">
             <div class="company-content-box-glow-3"></div>
             <img
@@ -605,7 +604,7 @@
         </div>
       </section>
 
-      <section id="cta" class="section-cta">
+      <section id="section--5" class="section-cta">
         <div class="container">
           <div class="cta grid-center-v">
             <div class="cta-content-box">
@@ -884,7 +883,6 @@
         </nav>
       </div>
     </footer>
-    <script src="app.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
